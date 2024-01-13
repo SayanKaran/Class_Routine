@@ -16,7 +16,7 @@ let card1 = document.getElementById("card1");
         let a14 = document.getElementById("a14");
         let a15 = document.getElementById("a15");
         let a16=document.getElementById("a16");
-        function updateCardBasedOnDay() {
+        function updateCardBasedOnDay(event) {
             const currentDay = new Date().getDay();
 
             // Reset borders
@@ -29,16 +29,28 @@ let card1 = document.getElementById("card1");
             // Set border based on the current day
             if (currentDay === 1) { // Monday
                 card1.style.border = "2px solid yellow";
+                card1.scrollIntoView({ behavior: 'smooth' });
+                event.preventDefault();
             } else if (currentDay === 2) { // Tuesday
                 card2.style.border = "2px solid yellow";
+                card2.scrollIntoView({ behavior: 'smooth' });
+                event.preventDefault();
             }else if(currentDay===3){
                 card3.style.border = "2px solid yellow";
+                card3.scrollIntoView({ behavior: 'smooth' });
+                event.preventDefault();
             }else if(currentDay===4){
                 card4.style.border = "2px solid yellow";
+                card4.scrollIntoView({ behavior: 'smooth' });
+                event.preventDefault();
             }else if(currentDay===5){
                 card5.style.border = "2px solid yellow";
-            }else if(currentDay===6){
+                card5.scrollIntoView({ behavior: 'smooth' });
+                event.preventDefault();
+            }else if(currentDay===0){
                 card6.style.border = "2px solid yellow";
+                card6.scrollIntoView({ behavior: 'smooth' });
+                event.preventDefault();
             }
             // Add conditions for other days as needed
         }
