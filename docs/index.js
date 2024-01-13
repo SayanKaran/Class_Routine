@@ -47,7 +47,7 @@ let card1 = document.getElementById("card1");
                 card5.style.border = "2px solid yellow";
                 card5.scrollIntoView({ behavior: 'smooth' });
                 event.preventDefault();
-            }else if(currentDay===0){
+            }else if(currentDay===6){
                 card6.style.border = "2px solid yellow";
                 card6.scrollIntoView({ behavior: 'smooth' });
                 event.preventDefault();
